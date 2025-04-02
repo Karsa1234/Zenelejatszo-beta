@@ -60,6 +60,10 @@ forms.addEventListener("submit", (event) => {
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("szen").style.display= "unset";
         played=document.getElementById("szen");
+    }else if(pickedS.includes("minden")){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("minden").style.display= "unset";
+        played=document.getElementById("minden");
     }
 });
 //event.preventDefault()
@@ -123,7 +127,12 @@ if(pickedS.includes("bor")){
     document.getElementById("picker").style.visibility= "hidden";
     document.getElementById("szen").style.display= "unset";
     played=document.getElementById("szen");
+}else if(pickedS.includes("minden")){
+    document.getElementById("picker").style.visibility= "hidden";
+    document.getElementById("minden").style.display= "unset";
+    played=document.getElementById("minden");
 }
+
 audio.currentTime=localStorage.getItem("jelenlegiido");
 
 

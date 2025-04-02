@@ -14,12 +14,12 @@
     <a href="https://alphacademy.hu/">alphacademy</a>
     <a href="credits.html">készítők</a> 
 </div>
-  
+<center>
+    <h2>Keress rá a zene nevekre!</h2>
+</center>
     <div id="picker">
-        <h2>Leírás: ha szeretnél zenét hallgatni, akkor keres rá a zene 
-            címére az alábbi keresőben!</h2>
         <form id="forms">
-            <input type="text" name="music title" id="pickedSong">            
+            <input type="text" name="music title" placeholder="Keresés..." id="pickedSong">            
             <input type="submit">
         </form>
         <div id="music"></div>
@@ -91,7 +91,11 @@
                 <audio src="zenék/Republic - 16 Tonna Fekete Szén.mp3" controls id="musictitle" autoplay="false"></audio>
                 <button id="Vissza" onclick="back()">Vissza</button>
             </div>
-        </div>
+            <div id="minden">
+                <h1 id="title">Minden rendben</h1>
+                <audio src="zenék/Compact Disco feat. Hősök - Minden rendben (Official Music Video).mp3" controls id="musictitle" autoplay="false"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
     </section>
 </body>
 <script src="script.js"></script>

@@ -72,6 +72,10 @@ h2{
   display: none;
   z-index: -4;
 }
+#minden{
+  display: none;
+  z-index: -4;
+}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;

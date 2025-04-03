@@ -1,4 +1,4 @@
-let pickedS=localStorage.getItem("utolso");
+let pickedS = null;
 let forms=document.getElementById("forms");
 let musictitle=document.getElementById("musictitle");
 let played;
@@ -71,7 +71,7 @@ function back(){
     document.getElementById("picker").style.visibility= "visible";
     played.style.visibility= "hidden";
 }
-console.log(pickedS);
+//console.log(pickedS);
 //document.getElementById('Vissza').addEventListener('click', back());
 
 
@@ -133,11 +133,11 @@ if(pickedS.includes("bor")){
     played=document.getElementById("minden");
 }
 
-audio.currentTime=localStorage.getItem("jelenlegiido");
+// audio.currentTime=localStorage.getItem("jelenlegiido");
 
 
 
-music.addEventListener('timeupdate',function(){
-    var currentTimeMs = audio.currentTime*1000;
-    audio.currentTime=localStorage.setItem("jelenlegiido", currentTimeMs);
-},false);
+// music.addEventListener('timeupdate',function(){
+//     var currentTimeMs = audio.currentTime*1000;
+//     audio.currentTime=localStorage.setItem("jelenlegiido", currentTimeMs);
+// },false);

@@ -1,137 +1,88 @@
-let pickedS = null;
+let pickedS = "";
 let forms=document.getElementById("forms");
 let musictitle=document.getElementById("musictitle");
 let played;
 
 forms.addEventListener("submit", (event) => {
-    pickedS=document.getElementById("pickedSong").value;
-    localStorage.setItem("utolso", pickedS);
+    //pickedS=document.getElementById("pickedSong").value;
+    let pickedS = localStorage.getItem("utolso") || "";
+    //localStorage.setItem("utolso", pickedS);
     event.preventDefault();
     pickedS=document.getElementById("pickedSong").value;
-    if(pickedS.includes("bor")){
+
+    if(pickedS.includes("felho") || pickedS.includes("felhő") || pickedS.includes("Felhő")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("bor").style.display= "unset";
-        played=document.getElementById("bor");
-    }else if(pickedS.includes("pálinka")){
-        document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("palinka").style.display= "unset";
-        played=document.getElementById("palinka");
-    }else if(pickedS.includes("grund")){
+        document.getElementById("felho").style.display= "unset";
+        played=document.getElementById("felho");
+    }else if(pickedS.includes("grund") || pickedS.includes("Grund")){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("grund").style.display= "unset";
         played=document.getElementById("grund");
-    }else if(pickedS.includes("belehalok")){
+    }else if(pickedS.includes("szolosbe") || pickedS.includes("szőlősbe") || pickedS.includes("Szőlősbe")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("belehalok").style.display= "unset";
-        played=document.getElementById("belehalok");
-    }else if(pickedS.includes("afrika")){
+        document.getElementById("szolosbe").style.display= "unset";
+        played=document.getElementById("szolosbe");
+    }else if(pickedS.includes("robinson") || pickedS.includes("Robinson")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("afrika").style.display= "unset";
-        played=document.getElementById("afika");
-    }else if(pickedS.includes("requiem")){
+        document.getElementById("robinson").style.display= "unset";
+        played=document.getElementById("robinson");
+    }else if(pickedS.includes("marti") || pickedS.includes("márti") || pickedS.includes("Márti")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("requiem").style.display= "unset";
-        played=document.getElementById("requiem");
-    }else if(pickedS.includes("ut")){
+        document.getElementById("marti").style.display= "unset";
+        played=document.getElementById("marti");
+    }else if(pickedS.includes("kapu") || pickedS.includes("Kapu")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("ut").style.display= "unset";
-        played=document.getElementById("ut");
-    }else if(pickedS.includes("kezenfogsz")){
+        document.getElementById("kapu").style.display= "unset";
+        played=document.getElementById("kapu");
+    }else if(pickedS.includes("o") || pickedS.includes("O")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("kezenfogsz").style.display= "unset";
-        played=document.getElementById("kezenfogsz");
-    }else if(pickedS.includes("csokkiraly")){
+        document.getElementById("o").style.display= "unset";
+        played=document.getElementById("o");
+    }else if(pickedS.includes("jovok") || pickedS.includes("jövök") || pickedS.includes("Jövök")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("csokkiraly").style.display= "unset";
-        played=document.getElementById("csokkiraly");
-    }else if(pickedS.includes("rakpart")){
+        document.getElementById("jovok").style.display= "unset";
+        played=document.getElementById("jovok");
+    }else if(pickedS.includes("napok") || pickedS.includes("Napok")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("rakpart").style.display= "unset";
-        played=document.getElementById("rakpart");
-    }else if(pickedS.includes("buli")){
+        document.getElementById("napok").style.display= "unset";
+        played=document.getElementById("napok");
+    }else if(pickedS.includes("kerek") || pickedS.includes("Kerek")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("buli").style.display= "unset";
-        played=document.getElementById("buli");
-    }else if(pickedS.includes("korkozepen")){
+        document.getElementById("kerek").style.display= "unset";
+        played=document.getElementById("kerek");
+    }else if(pickedS.includes("lehetsz") || pickedS.includes("Lehetsz")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("korkozepen").style.display= "unset";
-        played=document.getElementById("korkozepen");
-    }else if(pickedS.includes("szen")){
+        document.getElementById("lehetsz").style.display= "unset";
+        played=document.getElementById("lehetsz");
+    }else if(pickedS.includes("boros") || pickedS.includes("Boros")){
         document.getElementById("picker").style.visibility= "hidden";
-        document.getElementById("szen").style.display= "unset";
-        played=document.getElementById("szen");
-    }else if(pickedS.includes("minden")){
+        document.getElementById("boros").style.display= "unset";
+        played=document.getElementById("boros");
+    }else if(pickedS.includes("minden") || pickedS.includes("Minden")){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("minden").style.display= "unset";
         played=document.getElementById("minden");
+    }else if(pickedS.includes("tevagy") || pickedS.includes("Tevagy")){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("tevagy").style.display= "unset";
+        played=document.getElementById("tevagy");
+    }else if(pickedS.includes("kezenfogsz") || pickedS.includes("kézenfogsz") || pickedS.includes("Kézenfogsz")){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("kezenfogsz").style.display= "unset";
+        played=document.getElementById("kezenfogsz");
+    }else if(pickedS.includes("lehetne") || pickedS.includes("Lehetne")){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("lehetne").style.display= "unset";
+        played=document.getElementById("lehetne");
     }
-});
+})
 //event.preventDefault()
 function back(){
     document.getElementById("picker").style.visibility= "visible";
-    played.style.visibility= "hidden";
+    played.style.display = "none";
 }
 //console.log(pickedS);
 //document.getElementById('Vissza').addEventListener('click', back());
-
-
-if(pickedS.includes("bor")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("bor").style.display= "unset";
-    played=document.getElementById("bor");
-}else if(pickedS.includes("pálinka")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("palinka").style.display= "unset";
-    played=document.getElementById("palinka");
-}else if(pickedS.includes("grund")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("grund").style.display= "unset";
-    played=document.getElementById("grund");
-}else if(pickedS.includes("belehalok")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("belehalok").style.display= "unset";
-    played=document.getElementById("belehalok");
-}else if(pickedS.includes("afrika")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("afrika").style.display= "unset";
-    played=document.getElementById("afika");
-}else if(pickedS.includes("requiem")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("requiem").style.display= "unset";
-    played=document.getElementById("requiem");
-}else if(pickedS.includes("ut")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("ut").style.display= "unset";
-    played=document.getElementById("ut");
-}else if(pickedS.includes("kezenfogsz")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("kezenfogsz").style.display= "unset";
-    played=document.getElementById("kezenfogsz");
-}else if(pickedS.includes("csokkiraly")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("csokkiraly").style.display= "unset";
-    played=document.getElementById("csokkiraly");
-}else if(pickedS.includes("rakpart")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("rakpart").style.display= "unset";
-    played=document.getElementById("rakpart");
-}else if(pickedS.includes("buli")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("buli").style.display= "unset";
-    played=document.getElementById("buli");
-}else if(pickedS.includes("korkozepen")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("korkozepen").style.display= "unset";
-    played=document.getElementById("korkozepen");
-}else if(pickedS.includes("szen")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("szen").style.display= "unset";
-    played=document.getElementById("szen");
-}else if(pickedS.includes("minden")){
-    document.getElementById("picker").style.visibility= "hidden";
-    document.getElementById("minden").style.display= "unset";
-    played=document.getElementById("minden");
-}
 
 // audio.currentTime=localStorage.getItem("jelenlegiido");
 

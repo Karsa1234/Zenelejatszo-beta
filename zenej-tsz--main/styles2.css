@@ -18,63 +18,71 @@ h2{
     align-items: center;
 }
 
-#bor{
+#felho{
     display: none;
-    z-index: -1;
-}
-
-#palinka{
-    display: none;
-    z-index: -2;
+    z-index: 1;
 }
 
 #grund{
     display: none;
-    z-index: -3;
+    z-index: 2;
 }
-#belehalok{
-  display: none;
-  z-index: -4;
+
+#szolosbe{
+    display: none;
+    z-index: 3;
 }
-#afrika{
+#robinson{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#requiem{
+#marti{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#ut{
+#kapu{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#kezenfogsz{
+#o{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#csokkiraly{
+#jovok{
   display: none;
-  z-index: -4;  
+  z-index: 4;
 }
-#rakpart{
+#napok{
   display: none;
-  z-index: -4;
+  z-index: 4;  
 }
-#buli{
+#kerek{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#korkozepen{
+#lehetsz{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
-#szen{
+#boros{
   display: none;
-  z-index: -4;
+  z-index: 4;
 }
 #minden{
   display: none;
-  z-index: -4;
+  z-index: 4;
+}
+#tevagy{
+  display: none;
+  z-index: 4;
+}
+#kezenfogsz{
+  display: none;
+  z-index: 4;
+}
+#lehetne{
+  display: none;
+  z-index: 4;
 }
 body {
     margin: 0;

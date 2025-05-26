@@ -22,67 +22,117 @@ h2{
     display: none;
     z-index: 1;
 }
-
 #grund{
     display: none;
-    z-index: 2;
+    z-index: 1;
 }
-
 #szolosbe{
     display: none;
-    z-index: 3;
+    z-index: 1;
 }
 #robinson{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #marti{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #kapu{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #o{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #jovok{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #napok{
   display: none;
-  z-index: 4;  
+  z-index: 1;  
 }
 #kerek{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #lehetsz{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #boros{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #minden{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #tevagy{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #kezenfogsz{
   display: none;
-  z-index: 4;
+  z-index: 1;
 }
 #lehetne{
   display: none;
-  z-index: 4;
+  z-index: 1;
+}
+#balladaja{
+  display: none;
+  z-index: 1;
+}
+#nelkuled{
+  display: none;
+  z-index: 1;
+}
+#tinedzser{
+  display: none;
+  z-index: 1;
+}
+#lany{
+  display: none;
+  z-index: 1;
+}
+#pofonofon{
+  display: none;
+  z-index: 1;
+}
+#vilag{
+  display: none;
+  z-index: 1;
+}
+#voltam{
+  display: none;
+  z-index: 1;
+}
+#kozepen{
+  display: none;
+  z-index: 1;
+}
+#vallomas{
+  display: none;
+  z-index: 1;
+}
+#szaz{
+  display: none;
+  z-index: 1;
+}
+#szonyeg{
+  display: none;
+  z-index: 1;
+}
+#seholse{
+  display: none;
+  z-index: 1;
+}
+#mizu{
+  display: none;
+  z-index: 1;
 }
 body {
     margin: 0;

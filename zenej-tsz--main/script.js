@@ -10,70 +10,122 @@ forms.addEventListener("submit", (event) => {
     event.preventDefault();
     pickedS=document.getElementById("pickedSong").value;
 
-    if(pickedS.includes("felho") || pickedS.includes("felhő") || pickedS.includes("Felhő")){
+    if(pickedS == "felho" || pickedS == "felhő" || pickedS == "Felhő"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("felho").style.display= "unset";
         played=document.getElementById("felho");
-    }else if(pickedS.includes("grund") || pickedS.includes("Grund")){
+    }else if(pickedS == "grund" || pickedS == "Grund" || pickedS == "mi vagyunk a grund"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("grund").style.display= "unset";
         played=document.getElementById("grund");
-    }else if(pickedS.includes("szolosbe") || pickedS.includes("szőlősbe") || pickedS.includes("Szőlősbe")){
+    }else if(pickedS == "szolosbe" || pickedS == "szőlősbe" || pickedS == "Szőlősbe"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("szolosbe").style.display= "unset";
         played=document.getElementById("szolosbe");
-    }else if(pickedS.includes("robinson") || pickedS.includes("Robinson")){
+    }else if(pickedS == "robinson" || pickedS == "Robinson"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("robinson").style.display= "unset";
         played=document.getElementById("robinson");
-    }else if(pickedS.includes("marti") || pickedS.includes("márti") || pickedS.includes("Márti")){
+    }else if(pickedS == "marti" || pickedS == "márti" || pickedS == "Márti" || pickedS == "márti dala"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("marti").style.display= "unset";
         played=document.getElementById("marti");
-    }else if(pickedS.includes("kapu") || pickedS.includes("Kapu")){
+    }else if(pickedS == "kapu" || pickedS == "Kapu"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("kapu").style.display= "unset";
         played=document.getElementById("kapu");
-    }else if(pickedS.includes("o") || pickedS.includes("O")){
+    }else if(pickedS == "olyan o" || pickedS == "Olyan o" || pickedS == "olyan ő"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("o").style.display= "unset";
         played=document.getElementById("o");
-    }else if(pickedS.includes("jovok") || pickedS.includes("jövök") || pickedS.includes("Jövök")){
+    }else if(pickedS == "jovok" || pickedS == "jövök" || pickedS == "Jövök" || pickedS == "visszajövök"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("jovok").style.display= "unset";
         played=document.getElementById("jovok");
-    }else if(pickedS.includes("napok") || pickedS.includes("Napok")){
+    }else if(pickedS == "napok" || pickedS == "Napok"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("napok").style.display= "unset";
         played=document.getElementById("napok");
-    }else if(pickedS.includes("kerek") || pickedS.includes("Kerek")){
+    }else if(pickedS == "kerek" || pickedS == "Kerek" || pickedS == "kerek egész"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("kerek").style.display= "unset";
         played=document.getElementById("kerek");
-    }else if(pickedS.includes("lehetsz") || pickedS.includes("Lehetsz")){
+    }else if(pickedS == "lehetsz" || pickedS == "Lehetsz" || pickedS == "lehetsz király"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("lehetsz").style.display= "unset";
         played=document.getElementById("lehetsz");
-    }else if(pickedS.includes("boros") || pickedS.includes("Boros")){
+    }else if(pickedS == "boros" || pickedS == "Boros" || pickedS == "mesélek a bornak"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("boros").style.display= "unset";
         played=document.getElementById("boros");
-    }else if(pickedS.includes("minden") || pickedS.includes("Minden")){
+    }else if(pickedS == "minden" || pickedS == "Minden" || pickedS == "minden rendben"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("minden").style.display= "unset";
         played=document.getElementById("minden");
-    }else if(pickedS.includes("tevagy") || pickedS.includes("Tevagy")){
+    }else if(pickedS == "te vagy" || pickedS == "Te vagy" || pickedS == "te vagy a jel"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("tevagy").style.display= "unset";
         played=document.getElementById("tevagy");
-    }else if(pickedS.includes("kezenfogsz") || pickedS.includes("kézenfogsz") || pickedS.includes("Kézenfogsz")){
+    }else if(pickedS == "kezenfogsz" || pickedS == "kézenfogsz" || pickedS == "Kézenfogsz" || pickedS == "te majd kézenfogsz"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("kezenfogsz").style.display= "unset";
         played=document.getElementById("kezenfogsz");
-    }else if(pickedS.includes("lehetne") || pickedS.includes("Lehetne")){
+    }else if(pickedS == "lehetne" || pickedS == "Lehetne" || pickedS == "lehetne újra február"){
         document.getElementById("picker").style.visibility= "hidden";
         document.getElementById("lehetne").style.display= "unset";
         played=document.getElementById("lehetne");
+    }else if(pickedS == "balladaja" || pickedS == "Balladaja" || pickedS == "balladája" || pickedS == "a felszarvazottak balladája"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("balladaja").style.display= "unset";
+        played=document.getElementById("balladaja");
+    }else if(pickedS == "nelkuled" || pickedS == "Nelkuled" || pickedS == "nélküled" || pickedS == "hogyan tudnék élni nélküled"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("nelkuled").style.display= "unset";
+        played=document.getElementById("nelkuled");
+    }else if(pickedS == "tinedzser" || pickedS == "Tinedzser" || pickedS == "tinédzser" || pickedS == "tinédzser dal"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("tinedzser").style.display= "unset";
+        played=document.getElementById("tinedzser");
+    }else if(pickedS == "lany" || pickedS == "Lany" || pickedS == "lány" || pickedS == "hol van az a lány"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("lany").style.display= "unset";
+        played=document.getElementById("lany");
+    }else if(pickedS == "pofonofon" || pickedS == "Pofonofon" || pickedS == "beindul a pofonofon"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("pofonofon").style.display= "unset";
+        played=document.getElementById("pofonofon");
+    }else if(pickedS == "vilag" || pickedS == "Vilag" || pickedS == "világ" || pickedS == "álmodtam egy világot"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("vilag").style.display= "unset";
+        played=document.getElementById("vilag");
+    }else if(pickedS == "voltam" || pickedS == "Voltam" || pickedS == "kölyköd voltam"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("voltam").style.display= "unset";
+        played=document.getElementById("voltam");
+    }else if(pickedS == "kozepen" || pickedS == "Kozepen" || pickedS == "Közepén" || pickedS == "kör közepén"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("kozepen").style.display= "unset";
+        played=document.getElementById("kozepen");
+    }else if(pickedS == "vallomas" || pickedS == "Vallomas" || pickedS == "Vallomás" || pickedS == "angyali vallomás"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("vallomas").style.display= "unset";
+        played=document.getElementById("vallomas");
+    }else if(pickedS == "szaz" || pickedS == "Szaz" || pickedS == "száz út" || pickedS == "Száz út"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("szaz").style.display= "unset";
+        played=document.getElementById("szaz");
+    }else if(pickedS == "szonyeg" || pickedS == "Szonyeg" || pickedS == "csavard fel a szőnyeg" || pickedS == "Csavaed fel a szőnyeget"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("szonyeg").style.display= "unset";
+        played=document.getElementById("szonyeg");
+    }else if(pickedS == "seholse" || pickedS == "Seholse"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("seholse").style.display= "unset";
+        played=document.getElementById("seholse");
+    }else if(pickedS == "mizu" || pickedS == "Mizu"){
+        document.getElementById("picker").style.visibility= "hidden";
+        document.getElementById("mizu").style.display= "unset";
+        played=document.getElementById("mizu");
     }
 })
 //event.preventDefault()
